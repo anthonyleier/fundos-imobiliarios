@@ -22,7 +22,11 @@ def buscarTabela(pagina):
 
 
 def buscarItensFII(pagina):
-    itensFII = pagina.find_all("div", {"class": "fii-item", "data-type": "fundo de tijolo"})
+    tijolo = pagina.find_all("div", {"class": "fii-item", "data-type": "fundo de tijolo"})
+    papel = pagina.find_all("div", {"class": "fii-item", "data-type": "fundo de papel"})
+    fundos = pagina.find_all("div", {"class": "fii-item", "data-type": "fundo de fundos"})
+    desenvolvimento = pagina.find_all("div", {"class": "fii-item", "data-type": "fundo de desenvolvimento"})
+    itensFII = tijolo + papel + fundos + desenvolvimento
     return itensFII
 
 
