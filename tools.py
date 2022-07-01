@@ -1,4 +1,8 @@
-def montarFundo(dados):
+from scraping import formatarDados
+
+
+def montarFundo(linha):
+    dados = formatarDados(linha)
     fundo = {}
     fundo['Código'] = dados[0]
     fundo['Setor'] = dados[1]

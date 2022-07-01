@@ -15,30 +15,33 @@ def buscarTabela(pagina):
     return tabela
 
 
-def encontrarDado(item):
-    if isinstance(item, bs4.element.Tag):
-        conteudoTagPrincipal = item.contents
-        if conteudoTagPrincipal:
-            conteudoTagPrincipal = conteudoTagPrincipal[0]
+def verificarTag(item):
+    return isinstance(item, bs4.element.Tag)
 
-            if isinstance(conteudoTagPrincipal, bs4.element.Tag):
-                conteudoTagSecundaria = conteudoTagPrincipal.contents[0]
-                return conteudoTagSecundaria
 
+def buscarConteudoTag(item):
+    if verificarTag(item):
+        conteudoTag = item.contents
+
+        if conteudoTag:
+            texto = conteudoTag[0]
+
+            if verificarTag(texto):
+                return buscarConteudoTag(texto)
             else:
-                return conteudoTagPrincipal
+                return texto
 
         else:
             return 'N/A'
 
 
-def buscarDados(linha):
-    listaItens = linha.children
+def formatarDados(linha):
+    listaTags = linha.children
     dados = []
 
-    for item in listaItens:
-        dado = encontrarDado(item)
-        if dado:
+    for tag in listaTags:
+        if tag != '\n':
+            dado = buscarConteudoTag(tag)
             dados.append(dado)
 
     return dados

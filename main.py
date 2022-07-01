@@ -1,6 +1,6 @@
-from scraping import buscarPagina, buscarTabela, buscarDados
 from tools import montarFundo
 from analysis import gerarDataFrame
+from scraping import buscarPagina, buscarTabela
 
 
 if __name__ == "__main__":
@@ -11,8 +11,7 @@ if __name__ == "__main__":
     tabela = buscarTabela(pagina)
 
     for linha in tabela:
-        dados = buscarDados(linha)
-        fundo = montarFundo(dados)
+        fundo = montarFundo(linha)
         listaFundos.append(fundo)
 
     gerarDataFrame(listaFundos)
