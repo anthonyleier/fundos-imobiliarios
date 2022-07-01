@@ -1,9 +1,9 @@
-from tools import montarFundo
 from analysis import gerarDataFrame
-from scraping import buscarPagina, buscarTabela
+from tools import montarFundo, montarAvaliacao
+from scraping import buscarPagina, buscarTabela, buscarItensFII, abrirArquivoHTML
 
 
-if __name__ == "__main__":
+def buscarRanking():
     url = "https://www.fundsexplorer.com.br/ranking"
 
     listaFundos = []
@@ -13,5 +13,26 @@ if __name__ == "__main__":
     for linha in tabela:
         fundo = montarFundo(linha)
         listaFundos.append(fundo)
+        break
 
-    gerarDataFrame(listaFundos)
+    df = gerarDataFrame(listaFundos)
+    return df
+
+
+def buscarAvaliacao():
+    listaAvaliacoes = []
+    pagina = abrirArquivoHTML('avaliacao.html')
+    tabela = buscarItensFII(pagina)
+
+    for linha in tabela:
+        avaliacao = montarAvaliacao(linha)
+        listaAvaliacoes.append(avaliacao)
+
+    df = gerarDataFrame(listaAvaliacoes)
+    return df
+
+
+if __name__ == "__main__":
+    # df1 = buscarRanking()
+    df2 = buscarAvaliacao()
+    print(df2)

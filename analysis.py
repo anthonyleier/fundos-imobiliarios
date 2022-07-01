@@ -6,3 +6,5 @@ def gerarDataFrame(lista):
 
     with pd.ExcelWriter("fundos.xlsx") as writer:
         df.to_excel(writer)
+
+    return df

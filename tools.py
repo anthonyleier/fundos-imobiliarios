@@ -31,3 +31,11 @@ def montarFundo(linha):
     fundo['Vacância Financeira'] = dados[24]
     fundo['Quantidade Ativos'] = dados[25]
     return fundo
+
+
+def montarAvaliacao(linha):
+    avaliacao = {}
+    avaliacao['codigo'] = linha['data-symbol']
+    avaliacao['score'] = linha['data-score']
+    avaliacao['tipo'] = linha['data-type']
+    return avaliacao
