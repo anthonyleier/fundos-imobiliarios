@@ -1,0 +1,68 @@
+codigo,setor,preco,liquidez,dividend_yield,dividend_yield_12,P/VPA,score,tipo
+HREC11,Títulos e Val. Mob.,"R$ 96,45",13.0,"1,45%","11,68%","1,04",4.3,fundo de papel
+FIIB11,Híbrido,"R$ 425,00",586.0,"0,78%","8,74%","0,93",4.2,fundo de tijolo
+GCRI11,Títulos e Val. Mob.,"R$ 97,94",950.0,"1,56%","14,82%","1,00",4.2,fundo de papel
+CXAG11,Outros,"R$ 75,70",1062.0,"0,96%","0,00%","0,74",4.5,fundo de tijolo
+RRCI11,Títulos e Val. Mob.,"R$ 89,93",1516.0,"1,45%","14,94%","0,92",4.2,fundo de papel
+GALG11,Híbrido,"R$ 92,44",4292.0,"0,87%","9,98%","0,91",4.5,fundo de tijolo
+MFII11,Híbrido,"R$ 95,15",4809.0,"1,16%","13,11%","0,93",4.2,fundo de desenvolvimento
+CACR11,Híbrido,"R$ 104,50",4837.0,"1,32%","14,40%","1,01",4.2,fundo de papel
+BCIA11,Títulos e Val. Mob.,"R$ 82,92",5063.0,"0,89%","9,42%","0,79",4.1,fundo de fundos
+BTRA11,Outros,"R$ 83,99",5500.0,"0,85%","0,00%","0,81",4.5,fundo de tijolo
+BTAL11,Outros,"R$ 94,62",7809.0,"0,84%","9,81%","0,91",4.4,fundo de tijolo
+HGBS11,Shoppings,"R$ 173,24",7860.0,"0,81%","7,12%","0,80",4.5,fundo de tijolo
+CXCO11,Lajes Corporativas,"R$ 75,49",7889.0,"0,98%","9,88%","0,78",4.6,fundo de tijolo
+RECT11,Híbrido,"R$ 57,40",8331.0,"0,85%","8,99%","0,59",4.3,fundo de tijolo
+HGFF11,Títulos e Val. Mob.,"R$ 71,21",8490.0,"0,87%","9,23%","0,80",4.2,fundo de fundos
+BCRI11,Títulos e Val. Mob.,"R$ 109,63",8629.0,"1,34%","13,61%","1,02",4.2,fundo de papel
+XPIN11,Outros,"R$ 73,20",9073.0,"0,80%","8,50%","0,67",4.1,fundo de tijolo
+VCJR11,Títulos e Val. Mob.,"R$ 101,29",9494.0,"1,28%","15,74%","1,07",4.3,fundo de papel
+AFHI11,Títulos e Val. Mob.,"R$ 99,80",10027.0,"1,37%","14,40%","1,03",4.5,fundo de papel
+HGRE11,Lajes Corporativas,"R$ 129,68",11317.0,"0,60%","8,09%","0,80",4.4,fundo de tijolo
+RBHG11,Títulos e Val. Mob.,"R$ 87,40",12210.0,"1,67%","14,91%","0,91",4.2,fundo de papel
+SNCI11,Títulos e Val. Mob.,"R$ 102,68",12382.0,"1,34%","0,00%","1,02",4.1,fundo de papel
+GGRC11,Logística,"R$ 109,20",13223.0,"0,85%","9,05%","0,84",4.5,fundo de tijolo
+MALL11,Shoppings,"R$ 101,34",13955.0,"0,71%","8,10%","0,94",4.2,fundo de tijolo
+KNRI11,Híbrido,"R$ 131,48",14025.0,"0,64%","7,02%","0,84",4.5,fundo de tijolo
+HFOF11,Títulos e Val. Mob.,"R$ 70,01",14462.0,"0,86%","9,06%","0,84",4.3,fundo de fundos
+ALZR11,Logística,"R$ 116,50",14764.0,"0,68%","7,43%","1,07",4.3,fundo de tijolo
+BBPO11,Lajes Corporativas,"R$ 80,25",14848.0,"1,11%","11,54%","0,84",4.2,fundo de tijolo
+VINO11,Lajes Corporativas,"R$ 44,13",17802.0,"0,77%","9,80%","0,81",4.4,fundo de tijolo
+RBRP11,Outros,"R$ 57,30",19206.0,"0,71%","7,55%","0,70",4.3,fundo de tijolo
+VGIR11,Títulos e Val. Mob.,"R$ 98,00",19680.0,"1,31%","11,17%","1,02",4.2,fundo de papel
+VILG11,Logística,"R$ 95,51",19907.0,"0,74%","7,97%","0,84",4.5,fundo de tijolo
+RZAK11,Títulos e Val. Mob.,"R$ 96,61",20283.0,"1,84%","14,86%","1,03",4.2,fundo de papel
+TRXF11,Outros,"R$ 98,38",21382.0,"1,07%","9,67%","1,01",4.1,fundo de tijolo
+RBRF11,Títulos e Val. Mob.,"R$ 67,91",22943.0,"0,83%","9,65%","0,81",4.2,fundo de fundos
+BRCO11,Logística,"R$ 98,54",23140.0,"0,78%","7,55%","0,83",4.1,fundo de tijolo
+VRTA11,Títulos e Val. Mob.,"R$ 97,80",24262.0,"1,24%","13,51%","1,02",4.3,fundo de papel
+VISC11,Shoppings,"R$ 101,00",24853.0,"0,69%","7,71%","0,88",4.5,fundo de tijolo
+RBRR11,Títulos e Val. Mob.,"R$ 100,80",25417.0,"1,19%","12,07%","1,04",4.1,fundo de papel
+HSML11,Shoppings,"R$ 77,99",25884.0,"0,83%","8,49%","0,84",4.3,fundo de tijolo
+TGAR11,Outros,"R$ 115,60",26536.0,"1,36%","12,57%","0,92",4.3,fundo de desenvolvimento
+PVBI11,Lajes Corporativas,"R$ 91,80",26888.0,"0,61%","7,41%","0,93",4.5,fundo de tijolo
+XPML11,Shoppings,"R$ 94,70",26947.0,"0,70%","7,63%","0,93",4.5,fundo de tijolo
+HGLG11,Logística,"R$ 164,42",29445.0,"2,01%","9,69%","1,10",4.6,fundo de tijolo
+HGCR11,Títulos e Val. Mob.,"R$ 105,48",29945.0,"1,14%","11,51%","1,03",4.3,fundo de papel
+HGRU11,Híbrido,"R$ 118,69",31599.0,"1,01%","8,29%","1,00",4.5,fundo de tijolo
+BCFF11,Títulos e Val. Mob.,"R$ 63,39",32102.0,"0,85%","8,78%","0,81",4.3,fundo de fundos
+VIUR11,Títulos e Val. Mob.,"R$ 7,17",32201.0,"1,00%","10,72%","0,75",4.4,fundo de tijolo
+CVBI11,Títulos e Val. Mob.,"R$ 99,50",32570.0,"1,48%","13,51%","0,99",4.1,fundo de papel
+XPLG11,Logística,"R$ 93,67",33165.0,"0,75%","7,92%","0,82",4.6,fundo de tijolo
+BTLG11,Logística,"R$ 100,00",33341.0,"0,71%","8,22%","1,01",4.3,fundo de tijolo
+RZTR11,Híbrido,"R$ 101,20",36974.0,"1,24%","13,61%","1,03",4.4,fundo de tijolo
+KNHY11,Títulos e Val. Mob.,"R$ 104,00",38734.0,"1,23%","15,25%","1,06",4.1,fundo de papel
+DEVA11,Títulos e Val. Mob.,"R$ 99,51",38893.0,"1,60%","15,73%","1,01",4.4,fundo de papel
+KNSC11,Títulos e Val. Mob.,"R$ 94,08",39212.0,"1,16%","14,83%","1,05",4.7,fundo de papel
+MGFF11,Títulos e Val. Mob.,"R$ 58,80",39212.0,"0,95%","9,91%","0,77",4.3,fundo de fundos
+HCTR11,Outros,"R$ 113,55",50885.0,"1,54%","15,62%","0,94",4.4,fundo de papel
+KNCR11,Títulos e Val. Mob.,"R$ 101,96",54797.0,"1,03%","9,28%","1,01",4.1,fundo de papel
+CPTS11,Títulos e Val. Mob.,"R$ 90,84",68768.0,"1,19%","12,95%","0,97",4.5,fundo de papel
+IRDM11,Títulos e Val. Mob.,"R$ 101,90",72372.0,"1,28%","12,95%","1,05",4.6,fundo de papel
+RECR11,Títulos e Val. Mob.,"R$ 100,00",78913.0,"1,69%","14,76%","1,05",4.6,fundo de papel
+URPR11,Outros,"R$ 112,00",99111.0,"1,65%","18,35%","1,08",4.6,fundo de papel
+VSLH11,Outros,"R$ 9,14",99564.0,"1,29%","15,01%","0,88",4.3,fundo de papel
+XPSF11,Outros,"R$ 7,10",112249.0,"0,99%","10,70%","0,82",4.4,fundo de fundos
+KNIP11,Títulos e Val. Mob.,"R$ 101,19",176181.0,"1,48%","16,01%","1,04",4.3,fundo de papel
+VGHF11,Títulos e Val. Mob.,"R$ 10,02",387815.0,"1,30%","16,97%","1,07",4.7,fundo de papel
+MXRF11,Híbrido,"R$ 9,68",623461.0,"1,03%","11,18%","0,95",4.4,fundo de papel

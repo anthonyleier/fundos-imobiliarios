@@ -3,7 +3,7 @@ import pandas as pd
 from structure import buscarRanking, buscarRating
 
 
-arquivoDataFrame = 'dataframe.csv'
+arquivoDataFrame = 'files/dataframe.csv'
 
 
 def buscarDataFrame():
@@ -15,7 +15,8 @@ def buscarDataFrame():
     else:
         listaRanking = buscarRanking()
         listaRating = buscarRating()
-        dataframe = gerarDataFrame(listaRanking, listaRating)
+        gerarDataFrame(listaRanking, listaRating)
+        dataframe = pd.read_csv(arquivoDataFrame)
         return dataframe
 
 
@@ -23,12 +24,24 @@ def gerarDataFrame(listaRanking, listaRating):
     df1 = pd.DataFrame(listaRanking)
     df2 = pd.DataFrame(listaRating)
 
-    with pd.ExcelWriter('ranking.xlsx') as writer:
-        df1.to_excel(writer)
-
-    with pd.ExcelWriter('rating.xlsx') as writer:
-        df2.to_excel(writer)
+    df1.to_csv('files/ranking.csv', index=False)
+    df2.to_csv('files/rating.csv', index=False)
 
     dataframe = pd.merge(df1, df2, how='left')
-    dataframe.to_csv(arquivoDataFrame)
+    dataframe.to_csv(arquivoDataFrame, index=False)
+
+
+def formatarDataFrame(dataframe):
+    colunas = ['codigo', 'setor', 'preco', 'liquidez', 'dividend_yield', 'dividend_yield_12', 'P/VPA', 'score', 'tipo']
+    return dataframe[colunas]
+
+
+def aplicarFiltros(dataframe):
+    # Nota maior que 4
+    seloQualidade = dataframe['score'] > 4
+    dataframe = dataframe[seloQualidade]
+
+    # Ordernar por liquidez
+    dataframe = dataframe.sort_values(by=['liquidez'], ascending=False)
+    dataframe.to_csv('files/relatorio.csv', index=False)
     return dataframe

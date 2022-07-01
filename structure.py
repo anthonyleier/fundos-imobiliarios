@@ -58,7 +58,7 @@ def buscarRanking():
 
 def buscarRating():
     listaFundos = []
-    pagina = abrirArquivoHTML('rating.html')
+    pagina = abrirArquivoHTML('files/rating.html')
     tabela = buscarItensFII(pagina)
 
     for linha in tabela:
