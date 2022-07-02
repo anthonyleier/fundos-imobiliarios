@@ -61,6 +61,7 @@ def aplicarFiltros(dataframe):
 
 def gravarRelatorios(dataframe):
     caminho = "reports/relatorio_"
+    dataframe.to_csv(caminho + "geral.csv", index=False)
 
     desenvolvimento = dataframe[dataframe['tipo_desenvolvimento'] == 1]
     desenvolvimento.to_csv(caminho + "desenvolvimento.csv", index=False)
