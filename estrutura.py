@@ -1,6 +1,11 @@
 from config import baseINV
 
 
+def removerTabelaPrincipal():
+    query = "DROP TABLE IF EXISTS fundos_imobiliarios;"
+    baseINV.executar(query)
+
+
 def criarTabelaPrincipal():
     query = """
     CREATE TABLE IF NOT EXISTS fundos_imobiliarios (
@@ -82,6 +87,7 @@ def criarTabelaRating():
 
 
 def criarTabelas():
+    removerTabelaPrincipal()
     criarTabelaPrincipal()
     criarTabelaRanking()
     criarTabelaRating()

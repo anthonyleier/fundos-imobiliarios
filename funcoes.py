@@ -55,7 +55,3 @@ def buscarPaginaRating():
         listaFundos.append(fundo)
 
     return listaFundos
-
-
-def gerarPrices():
-    pass
