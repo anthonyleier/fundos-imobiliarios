@@ -1,10 +1,21 @@
 from scraping import buscarConteudoTag
 
 
+def formatarTexto(texto):
+    texto = str(texto)
+    texto = texto.lower()
+    texto = texto.replace("fundo de ", "")
+    texto = 'títulos' if texto == 'títulos e val. mob.' else texto
+    texto = texto.title()
+    texto = None if texto.upper() == 'N/A' else texto
+    return texto
+
+
 def formatarValor(valor):
     valor = valor.replace("R$", "")
     valor = valor.replace("%", "")
-    valor = valor.replace(".", "").replace(",", ".")
+    valor = valor.replace(".", "") if ',' in valor else valor
+    valor = valor.replace(",", ".")
     valor = float(valor) if valor != 'N/A' else None
     return valor
 
@@ -24,7 +35,7 @@ def formatarLinha(linha):
 def formatarFundoRanking(linha):
     fundo = {}
     fundo['codigo'] = linha[0]
-    fundo['setor'] = linha[1]
+    fundo['setor'] = formatarTexto(linha[1])
     fundo['preco'] = formatarValor(linha[2])
     fundo['liquidez'] = formatarValor(linha[3])
     fundo['dividendo'] = formatarValor(linha[4])
@@ -56,5 +67,5 @@ def formatarFundoRating(linha):
     fundo = {}
     fundo['codigo'] = linha['data-symbol']
     fundo['score'] = formatarValor(linha['data-score'])
-    fundo['tipo'] = linha['data-type']
+    fundo['tipo'] = formatarTexto(linha['data-type'])
     return fundo
