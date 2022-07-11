@@ -1,3 +1,6 @@
 from banco import Banco
 
-baseINV = Banco('localhost', 'investwallet')
+ipAcesso = 'localhost'
+base = 'investwallet'
+
+baseINV = Banco(ipAcesso, base)

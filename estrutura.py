@@ -32,7 +32,7 @@ def criarTabelaPrincipal():
         vacancia_financeira FLOAT,
         quantidade_ativos INT,
         score FLOAT,
-        tipo VARCHAR(20),
+        tipo VARCHAR(50),
         price FLOAT);
     """
     baseINV.executar(query)
@@ -76,7 +76,7 @@ def criarTabelaRating():
     CREATE TEMPORARY TABLE fundos_rating (
         codigo VARCHAR(20) NOT NULL,
         score FLOAT,
-        tipo VARCHAR(20));
+        tipo VARCHAR(50));
     """
     baseINV.executar(query)
 

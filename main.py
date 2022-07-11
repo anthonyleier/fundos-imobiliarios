@@ -1,6 +1,6 @@
 from config import baseINV
 from estrutura import criarTabelas, unirTabelas
-from buscadores import gerarRanking, gerarRating, gerarPrices
+from funcoes import gerarRanking, gerarRating, gerarPrices
 
 if __name__ == "__main__":
     criarTabelas()
