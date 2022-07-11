@@ -48,15 +48,3 @@ def buscarConteudoTag(item):
 
         else:
             return 'N/A'
-
-
-def formatarDados(linha):
-    listaTags = linha.children
-    dados = []
-
-    for tag in listaTags:
-        if tag != '\n':
-            dado = buscarConteudoTag(tag)
-            dados.append(dado)
-
-    return dados

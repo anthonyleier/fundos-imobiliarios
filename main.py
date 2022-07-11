@@ -1,8 +1,11 @@
-from analysis import buscarDataFrame, formatarDataFrame, aplicarFiltros, gravarRelatorios
+from config import baseINV
+from estrutura import criarTabelas, unirTabelas
+from buscadores import gerarRanking, gerarRating, gerarPrices
 
 if __name__ == "__main__":
-    dataframe = buscarDataFrame()
-    dataframe = formatarDataFrame(dataframe)
-    dataframe = aplicarFiltros(dataframe)
-    dataframe = gravarRelatorios(dataframe)
-    print(dataframe)
+    criarTabelas()
+    gerarRanking()
+    gerarRating()
+    unirTabelas()
+    gerarPrices()
+    baseINV.fecharConexao()
